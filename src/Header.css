@@ -1,0 +1,64 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Groovy\ Fast.ttf);
+ }
+.header{
+    color: white;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.header::-webkit-scrollbar {
+    display: none;
+}
+.header {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.header__icons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.header__icon{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    cursor: pointer;
+}
+.header__icon > .MuiSvgIcon-root{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    opacity: .7;
+}
+.header__icon > p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: small;
+    margin: 0 auto;
+    display: none;
+}
+.header__icon:hover > p {
+    display: inline-flex;
+}
+.header__icon--active > p{
+    display: inline-flex !important;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header > a > h1{
+    font-family: MyFirstFont;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: 0 20px;
+}
+@media screen and (max-width: 768px) {
+    .header{
+        padding: 10px;
+    }
+}

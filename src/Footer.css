@@ -1,0 +1,40 @@
+.footer{
+    text-align: center;
+}
+.footer > a{
+    color: #087575;
+}
+.to__top{
+    position: absolute;
+    right: 2px;
+    bottom: 10px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.footer > .MuiSvgIcon-root:nth-child(1){
+    position: absolute;
+    font-size: 30px;
+    right: -5px;
+    top: 60px;
+    display: none;
+    animation: fade 2s infinite;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: .6;
+    }
+    75%{
+        opacity: .3;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .footer > .MuiSvgIcon-root:nth-child(1){
+        display: inline-block;
+    }
+}

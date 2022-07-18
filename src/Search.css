@@ -1,0 +1,27 @@
+.search__form{
+    display: flex;
+}
+.search__container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search__container > input {
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 17px;
+    width: 0;
+    transition: all 1s;
+    visibility: hidden;
+}
+.search__container > .MuiSvgIcon-root{
+    margin-left: 5px;
+    font-size: 30px;
+    opacity: .7;
+}
+.search__container > .MuiSvgIcon-root:hover{
+    opacity: 1;
+}

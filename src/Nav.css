@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    overflow-x: scroll;
+    padding-left: 40px;
+    position: relative;
+    width: 90%;
+}
+.nav::-webkit-scrollbar {
+    display: none;
+}
+.nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.nav > a{
+    text-decoration: none;
+    color: white;
+}
+.nav > a > h2 {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: transform 50ms ease-out;
+}
+.nav > a > h2:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.active{
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        padding-left: 10px;
+        margin-right: 40px;
+    }
+    .nav > h2 {
+        font-size: 18px;
+    }
+    
+}
